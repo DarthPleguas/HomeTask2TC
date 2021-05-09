@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div id="title"><h1>Оформлення квитка</h1></div>
+	<div id="form1">
+		<input type="text" id="firstName" placeholder="Введіть Ваше ім'я">
+		<input type="text" id="lastName" placeholder="Введіть Ваше прізвище"><br><br>
+		<input type="text" id="age" placeholder="Введіть № пільгової ксиви">
+		<input type="submit" value="Відправити" onclick="serverSubmit()">
+	</div>
+	<div id="greeting"></div>
+	<div id="secF" style="display: none;">
+		<p id="bonus"></p><hr>
+		<p>Чи бажаєте чаю в дорогу? (10 грн/склянка)</p>
+		<p>Кількість склянок: <span id="cupsOfTea"></span></p>
+		<button class="plus" data-id="tea">+</button>
+		<button class="minus" data-id="tea">-</button><hr>
+		<button id="out" onclick="result()">Загальна вартість</button>
+		<p id="res"><br/></p><br>
+		<input type="submit" value="Відправити" onclick="outCome()">
+	</div>
+	<div id="outcome"></div>
+	
+	<script src="Person.js"></script>
+	<script src="Exemptioner.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
